@@ -15,8 +15,8 @@ document.addEventListener('click', function(e) {
 });
 
 // smooth scrool
-<script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -25,4 +25,4 @@ document.addEventListener('click', function(e) {
         });
       });
     });
-  </script>
+ 
