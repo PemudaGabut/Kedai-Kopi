@@ -13,3 +13,16 @@ document.addEventListener('click', function(e) {
         navbarNav.classList.remove('active');
     }
 });
+
+// smooth scrool
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
